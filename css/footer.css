@@ -1,0 +1,411 @@
+footer {
+    background: linear-gradient(135deg, var(--dark-brown) 0%, #a0522d 100%);
+    color: var(--text-light);
+    padding: 30px 20px 15px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+footer address a {
+    color: var(--light-peach);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer address a:hover {
+    color: var(--text-light);
+}
+
+.social-section {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.social-section h4 {
+    color: var(--light-peach);
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.social-button img {
+    width: 22px;
+    height: 22px;
+    transition: all 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.social-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(135deg, #ff6b35, #ff8fa3);
+    transition: height 0.4s ease;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.social-button:hover::before {
+    height: 100%;
+}
+
+.social-button:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+    border-color: #ff6b35;
+    background: transparent;
+}
+
+.social-button:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    padding-top: 15px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    color: var(--light-peach);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 1420px) {
+    .sticky-image img {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .burger-label {
+        display: flex;
+        order: 1;
+    }
+    
+    #header-toggle:checked ~ .burger-label .menu-icon:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    #header-toggle:checked ~ .burger-label .menu-icon:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #header-toggle:checked ~ .burger-label .menu-icon:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    header > nav {
+        display: none;
+    }
+    
+    header h1 {
+        position: static;
+        transform: none;
+        order: 2;
+        flex: 1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    
+    main {
+        margin-top: 80px;
+    }
+    
+    .video-container img,
+    .shapes img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .sticky-image img {
+        visibility: hidden;
+        display: none;
+    }
+    
+    .techniques-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .float-left,
+    .float-right {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    
+    .glass-companies-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .glass-card {
+        padding: 20px;
+        min-height: 200px;
+    }
+    
+    .glass-companies-section {
+        margin: 40px -15px;
+        padding: 30px 15px;
+    }
+    
+    .glass-form-container {
+        padding: 25px;
+        margin: 20px auto;
+    }
+    
+    .glass-form fieldset {
+        padding: 20px;
+    }
+    
+    .glass-form-container::before {
+        width: 60px;
+        height: 60px;
+        opacity: 0.3;
+    }
+    
+    .glass-form-container::after {
+        width: 50px;
+        height: 50px;
+        opacity: 0.35;
+    }
+    
+    .glass-form::before {
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 55px solid #ff8fa3;
+        opacity: 0.3;
+    }
+    
+    .glass-form::after {
+        width: 45px;
+        height: 45px;
+        opacity: 0.35;
+    }
+    
+    .notification-container {
+        order: 3;
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    main {
+        margin-top: 70px;
+        padding: 0 15px;
+    }
+    
+    .section, article {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .submit-btn,
+    .reset-btn {
+        width: 100%;
+    }
+    
+    .sticky-image {
+        display: none;
+    }
+    
+    .video-container img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+    
+    footer {
+        padding: 25px 15px 12px;
+    }
+    
+    .footer-content {
+        margin-bottom: 15px;
+    }
+    
+    .social-section {
+        margin-bottom: 15px;
+    }
+    
+    .social-buttons {
+        gap: 12px;
+    }
+    
+    .social-button {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .social-button img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .social-section h4 {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .gallery-item:hover {
+        transform: translateY(-5px) scale(1.02);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    header h1 {
+        font-size: 1.1rem;
+    }
+    
+    main {
+        margin-top: 60px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .section, article {
+        padding: 15px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .gallery-item {
+        width: 100%;
+    }
+    
+    .gallery-overlay {
+        padding: 15px;
+    }
+    
+    .gallery-title {
+        font-size: 1rem;
+    }
+    
+    .gallery-description {
+        font-size: 0.8rem;
+    }
+    
+    footer {
+        padding: 20px 12px 10px;
+    }
+    
+    .social-buttons {
+        gap: 10px;
+    }
+    
+    .social-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-button img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .social-section h4 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+    
+    .glass-form-container {
+        padding: 20px 15px;
+    }
+    
+    .glass-form fieldset {
+        padding: 15px;
+    }
+    
+    .glass-form legend {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+    
+    .glass-form-container::before,
+    .glass-form-container::after,
+    .glass-form::before,
+    .glass-form::after {
+        opacity: 0.4;
+    }
+}

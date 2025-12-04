@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" href="images/favicon2.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>История анимации</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="notification-container">
+            <div class="notification-trigger"><img src = "images/noti.png"></div>
+            <div class="notification-dropdown">
+                <div class="notification-item">Уведомление 1</div>
+                <div class="notification-item">Уведомление 2</div>
+                <div class="notification-item">Уведомление 3</div>
+                <div class="notification-item">Уведомление 4</div>
+            </div>
+        </div>
+        <input type="checkbox" id="header-toggle">
+        <label for="header-toggle" class="burger-label">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </label>
+
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Прошлое</a></li>
+                <li><a href="today.html">Настоящее</a></li>
+                <li><a href="future.html">Будущее</a></li>
+                <li><a href="contacts.html">Участие</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Прошлое</a></li>
+                <li><a href="today.html">Настоящее</a></li>
+            </ul>
+        </nav>
+        <h1><a href="add.html" class="header-title">История анимации</a></h1>
+        <nav>
+            <ul>
+                <li><a href="future.html">Будущее</a></li>
+                <li><a href="contacts.html">Участие</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-grid-container">
+        <h2>Хочешь тоже?</h2>
+        <section class="animation-stages">
+            <h3>Нужно учиться</h3>
+            <p style="color:  #ff8fa3;"> Снизу есть полезная инфа c курсами </p>
+        </section>
+        <section class="shapes">
+            <h3>Выберите тип желанной анимации</h3>
+            <img src="images/animap.jpg" usemap="#shapes" width="1100" alt="Типы анимации: 2D, Stop Motion, 3D">
+            <map name="shapes"> 
+                <area shape="rect" coords="0,0,366,600" href="https://turbologo.ru/blog/2d-animation/" alt="2D анимация"title="2D анимация">
+                <area shape="rect" coords="367,0,733,600" href="https://biganimationschool.ru/puppet" alt="Stop Motion анимация" title="Stop Motion анимация">
+                <area shape="rect" coords="734,0,1100,600" href="https://media.contented.ru/opyt/instrukcii/kak-sozdat-3d-animaciyu-ot-idei-k-realizacii/" alt="3D анимация" title="3D анимация">
+            </map>
+            <p>Нажмите на любой тип анимации</p>
+        </section>
+
+
+        <section class="glass-companies-section">
+            <h2>Великие анимационные студии</h2>
+            <div class="glass-companies-container">
+                <div class="glass-card">
+                    <div class="card-content">
+                        <h3>Walt Disney Animation Studios</h3>
+                        <p>Основана в 1923 году. Подарила миру первых полноценных анимационных персонажей и революционные технологии в анимации.</p>
+                        <div class="card-year">1923</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="card-content">
+                        <h3>Studio Ghibli</h3>
+                        <p>Японская студия, основанная Хаяо Миядзаки. Известна своими художественными фильмами и уникальным визуальным стилем.</p>
+                        <div class="card-year">1985</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="card-content">
+                        <h3>Pixar Animation Studios</h3>
+                        <p>Пионер компьютерной анимации. Создала первый полнометражный компьютерный анимационный фильм "История игрушек".</p>
+                        <div class="card-year">1986</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="video-container">
+            <h3>Пример современной анимации</h3>
+            <a href="https://www.youtube.com/watch?v=AhxGObicnPs" target="_blank">
+                <img src="images/WinOrLose.jpg" alt="Превью видео" width="1024";">
+            </a>
+        </div>
+        <section class="container">
+            <div class="box">
+                <div class="content">
+                <h2>А что было раньше?</h2>
+                <p> Вернемся к нашим истокам. Кто-то шел, чтобы ты бежал</p>
+                <a href="index.html">Скорее узнать!</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                <h2>А что в реальности?</h2>
+                <p> Если вам интересно как поживает анимация на сегодняшний день, то вперед!</p>
+                <a href="today.html">Вперед!</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                <h2>Будущее грядет</h2>
+                <p>Никто не знает, что даст нам завтрашний день. Но некторые исследования имеются.</p>
+                <a href="future.html">Не страшно!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="back-to-top" id="backToTop">
+        <p style="font-size: 30px;">↑</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <address>
+                <p>Телефон: <a href="tel:+79041010043">+7 (904) 101-00-43</a></p>
+                <p>Email: <a href="mailto:lizanick37@mail.ru?subject=Example+subject&body=Message+text">lizanick37@gmail.com</a></p>
+            </address>
+        </div>
+
+        <div class="social-buttons">
+            <a href="https://vk.com" class="social-button vk" target="_blank" aria-label="ВКонтакте">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/vk-com.png" alt="VK" width="24" height="24">
+            </a>
+            
+            <a href="https://t.me" class="social-button telegram" target="_blank" aria-label="Telegram">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/telegram-app.png" alt="Telegram" width="24" height="24">
+            </a>
+            
+            <a href="https://www.youtube.com/" class="social-button youtube" target="_blank" aria-label="YouTube">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/youtube-play.png" alt="YouTube" width="24" height="24">
+            </a>
+            
+            <a href="https://www.instagram.com/" class="social-button instagram" target="_blank" aria-label="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png" alt="Instagram" width="24" height="24">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script/1.js"></script>
+</body>
+</html>
