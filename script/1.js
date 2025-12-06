@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Основана в 1986, США. История игрушек, В поисках Немо, Суперсемейка, Тайна Коко"
         },
         {
-            url: "https://media1.tenor.com/m/rkcDQeN3iaEAAAAC/shrek-fiona.gif",
+            url: "https://media1.tenor.com/m/QtD-9tIt49EAAAAd/shrek-dance.gif",
             title: "DreamWorks Animation",
             description: "Основана в 1994, США. Шрек, Мадагаскар, Как приручить дракона, Кунг-фу панда"
         },
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Основана в 2007, США. Гадкий я, Миньоны, Тайная жизнь домашних животных, Супер Марио"
         },
         {
-            url: "https://media.tenor.com/Z3L_q2vxdhYAAAAM/sad-hamm.gif",
+            url: "https://i.pinimg.com/originals/2a/88/19/2a8819d7675eea824c6f107bda7c71cb.gif",
             title: "Pixar Animation Studios",
             description: "Основана в 1986, США. История игрушек, В поисках Немо, Суперсемейка, Тайна Коко"
         },
